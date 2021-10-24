@@ -1,0 +1,122 @@
+:root{
+    --color-light: hsl(0, 59%, 91%);
+    --color-medium: hsl(0, 59%, 51%);
+    --color-dark: hsl(0, 59%, 21%);
+    --font-sans: 'Anton', sans-serif;
+    --font-cursive: 'Playball', cursive
+}
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body, html{
+    position: relative;
+    background-image: url('img/bg.jfif');
+    background-position: center;
+    background-size: cover;
+    color: wheat;
+}
+#content{
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: hsla(0, 0%, 0%, 0.8);
+    font-size: 1.2em;
+    font-family: var(--font-sans);
+}
+.main{
+    width: 80%;
+    min-height: 85vh;
+    height: 500px;
+    margin: 50px auto;
+}
+
+.name{
+    padding: 0.2em 1em;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav__item{
+    padding: 1rem;
+    margin: 0 1em;
+
+}
+.nav__item:hover{ 
+    text-shadow: 5px 4px 2px saddlebrown;
+    border-bottom: 1px solid burlywood;
+    /* border-top: 1px solid saddlebrown; */
+    transform: scale(1.1);
+}
+.work-hours{
+    display: flex;
+}
+.dishes__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.card{
+    width: 350px;
+    height: 250px;
+    margin: 1em;
+    border: 2px solid;  
+    background-size: cover;
+    background-position: center;
+}
+.card__name{
+    background-color: burlywood;
+    /* border-radius: 20px; */
+    color: black;
+    /* width: 100%; */
+    margin: 0;
+    padding: 0.5em 1em;
+}
+.card:nth-child(1){
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.foodism.co.uk%2Fgallery%2F5c51835487f2a.jpeg&f=1&nofb=1);
+
+}
+.card:nth-child(2){
+    background-image: url(https://www.veganricha.com/wp-content/uploads/2013/05/bbq-lentil-veggie-burger-Spiced-apple-cake-015.jpg);
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: -50px;
+    font-family: var(--font-sans);
+    text-align: center;
+    background-color: hsla(0, 0%, 0%, 0.8);
+}
+.trademark{
+    display: flex;
+    justify-content: center;
+}
+.trademark a{
+    color: wheat;
+}
+.trademark_img{
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    border-radius: 100px;
+}
+.trademark:hover .trademark_img{
+    background-color: wheat;
+    background-image: url(img/github.png);  
+    background-position: center;
+    background-size: cover;
+    
+}
