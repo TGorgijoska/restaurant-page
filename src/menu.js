@@ -29,7 +29,7 @@ function createFoodItem(name, p, d) {
     const descr = document.createElement('p');
     descr.textContent = d;
     const price = document.createElement('p');
-    price.textContent = p;
+    price.textContent = p +" $";
 
     item.appendChild(title);
     item.appendChild(descr);

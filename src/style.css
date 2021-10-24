@@ -16,10 +16,10 @@ body, html{
     background-position: center;
     background-size: cover;
     color: wheat;
+    font-family: var(--font-sans);
 }
 #content{
     min-height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
 }
 .header{
     position: fixed;
@@ -35,8 +35,10 @@ body, html{
 .main{
     width: 80%;
     min-height: 85vh;
-    height: 500px;
-    margin: 50px auto;
+    height: 100%;
+    margin: 0 auto;
+    padding: 60px 0;
+    background-color: rgba(255, 228, 196, 0.178);
 }
 
 .name{
@@ -57,8 +59,23 @@ body, html{
     /* border-top: 1px solid saddlebrown; */
     transform: scale(1.1);
 }
+.hero{
+    height: 50vh;
+    padding: 2em 1em;
+    background-color: wheat;
+    color: black;
+    font-size: 2em;
+    font-family: var(--font-cursive);
+    text-align: center;
+}
 .work-hours{
     display: flex;
+}
+.dishes{
+    text-align: center;
+}
+.dishes__title{
+    text-shadow: 3px 2px 7px black;
 }
 .dishes__cards{
     display: flex;
@@ -95,7 +112,7 @@ body, html{
     bottom: 0;
     width: 100%;
     margin: 0 auto;
-    margin-bottom: -50px;
+    margin-bottom: -70px;
     font-family: var(--font-sans);
     text-align: center;
     background-color: hsla(0, 0%, 0%, 0.8);
@@ -119,4 +136,48 @@ body, html{
     background-position: center;
     background-size: cover;
     
+}
+
+
+/* menu.js */
+.menu{
+    padding: 1em;
+    text-align: center;
+}
+.menu h3, .menu h5 {
+    font-size: 2em;
+    font-family: var(--font-cursive);
+    text-shadow: 3px 6px 7px black;
+}
+
+.menu__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+.menu__item{
+    width: 200px;
+    height: 200px;
+    margin: 1.5em 1em;
+    padding: 1em;
+    border: 2px solid black;
+    box-shadow: -1px 17px 0 11px wheat;
+    background-color: hsla(0, 0%, 0%, 0.8);
+}
+.menu__item p {
+    text-decoration: dashed underline from-font;
+}
+
+/* contact.js */
+
+.contact-page{
+    padding: 5em;
+    text-align: center;
+    font-size: 1.5em;
+}
+.contact__section{
+    padding: 1em;
+    background-color: hsla(0, 0%, 0%, 0.7);
 }
